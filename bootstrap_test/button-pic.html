@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+    <!--如果 a元素被作为按钮使用; 并用于在当前页面触发某些功能 而不是用于链接其他页面或链接当前页面中的其他部分，那么，务必为其设置 role="button" 属性。-->
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+</div>
+<div class="row">
+    <button type="button" class="btn btn-default">（默认样式）Default</button>
+    <button type="button" class="btn btn-primary">（首选项）Primary</button>
+    <button type="button" class="btn btn-success">（成功）Success</button>
+    <button type="button" class="btn btn-info">（一般信息）Info</button>
+    <button type="button" class="btn btn-warning">（警告）Warning</button>
+    <button type="button" class="btn btn-danger">（危险）Danger</button>
+    <button type="button" class="btn btn-link">（链接）Link</button>
+</div>
+<div class="row">
+    <p>
+        <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+        <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+        <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+        <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button>
+        <button type="button" class="btn btn-default btn-xs">（超小尺寸）Extra small button</button>
+    </p>
+</div>
+<div class="row">
+    <!--通过给按钮添加 .btn-block 类可以将其拉伸至父元素100%的宽度，而且按钮也变为了块级（block）元素。-->
+    <button type="button" class="btn btn-primary btn-lg btn-block">（块级元素）Block level button</button>
+    <button type="button" class="btn btn-default btn-lg btn-block">（块级元素）Block level button</button>
+</div>
+<div class="row">
+    <!--active 当按钮处于激活状态时，其表现为被按压下去（底色更深、边框夜色更深、向内投射阴影）。-->
+    <button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+    <button type="button" class="btn btn-default btn-lg active">Button</button>
+    <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+    <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+</div>
+<div class="row">
+    <!--禁用状态-->
+    <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+    <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+</div>
+<div class="row">
+    <!--图片-->
+    <img src="..." alt="..." class="img-rounded">
+    <img src="..." alt="..." class="img-circle">
+    <img src="..." alt="..." class="img-thumbnail">
+</div>
+</body>
+</html>

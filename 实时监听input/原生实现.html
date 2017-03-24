@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生实现input实时监听</title>
+</head>
+<body>
+<div>
+    <input onporpertychange='OnPropChanged(event)' oninput='OnInput(event)'/>
+</div>
+<script>
+    function OnInput (event) {
+        alert ("The new content: " + event.target.value);
+    }
+    //oninput 事件在 IE9 以下版本不支持，需要使用 IE 特有的 onpropertychange 事件替代
+    function OnPropChanged (event) {
+        alert ("The new content: " + event.srcElement.value);
+    }
+</script>
+</body>
+</html>

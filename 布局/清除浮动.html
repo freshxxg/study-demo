@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+</head>
+<body>
+<span>清除浮动的方法，无非有两类：
+其一，通过在浮动元素的末尾添加一个空元素，设置 clear：both属性，after伪元素其实也是通过 content 在元素的后面生成了内容为一个点的块级元素；
+其二，通过设置父元素 overflow 或者display：table 属性来闭合浮动</span>
+
+<div style="border: solid 5px #0e0; width: 250px;">
+    <div style="height: 50px; width: 50px; background-color: Red; float:left;"></div>
+    <div style="height: 100px; width: 100px; background-color: Green;clear: both"> 11111111111 11111111111</div>
+    <span style="clear: both"></span>
+</div>
+</body>
+</html>
